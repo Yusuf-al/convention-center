@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Changa:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+:root {
+    --dark-pink-one: #E02C6D;
+    --dark-two: #201241;
+    --main-color: #4c24c2cc;
+    --light-one: rgb(240, 239, 239);
+    --light-two: #f9fafb;
+    --light-three: #f6f7fb;
+  }
+
+.header-img{
+    width: 1440px;
+    height: 584px;
+    object-fit: cover;
+}
+.my-btn{
+    background-color: white;
+    font-family:'Poppins','Courier New', Courier, monospace;
+    color: steelblue;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    outline: none;
+    transition:all .3s;
+}
+
+.my-btn:hover{
+    background-color: #f5f5f5;
+    color: #0963ac;
+}
+
+.my-font{
+    font-family: 'Changa',sans-serif;
+    font-weight: 300;
+}
+.my-list li{
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.my-list li span{
+    background-color: #e9e9e9ad;
+    padding: 3px 8px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    color: #3F87F5;
+}
+.active-bg{
+    background-color:#3F87F5 !important;
+    color: white !important;
+    transform: translateY(-15px) !important;
+}
+
+.hot{
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 17px;
+    padding: 7px 15px;
+    top: -12px;
+    right: -18px;
+}
+
+.my-toast{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 99;
+    width: 275px;
+}
+
+.my-toast-close-btn{
+    position: absolute;
+    opacity: 1 !important;
+    top: -12px;
+    padding: 1px 5px;
+    color: white;
+    right: -10px;
+    background-color: #f63e3e !important;
+    border-radius: 50% !important;
+}
+
+.card{
+    transition: all .5s;
+    border: none;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* -----------------
+  flip Section
+  ----------------- */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    border-radius: 50px;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(to right, #d6f8b2, #84c4f8);
+    /* background-color: #3F87F5; */
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+  .inner-details{
+      margin-top: 70px;
+      text-transform: uppercase;
+      font-family: 'Changa',sans-serif;
+  }
+  .inner-details p{
+      margin-top: 5px;
+  }
+
+  /* -----------------
+  Social Media icon
+  ----------------- */
+.social-media{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+.social-media a{
+    color: whitesmoke;
+    padding:4px 10px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    font-size: 15px;
+    border: .5px solid var(--main-color);
+    margin: 5px 8px;
+    transition: all .5s;
+}
+.social-media a:hover{
+    background-color: transparent;
+    border: .5px solid var(--main-color);
+    color: var(--main-color);
+    
+}
+/* -------------------
+    Foooter 
+--------------------*/
+.footer-link a img{
+    margin: 20px;
+    border: .5px solid #a7a7a7;
+    border-radius: 15px;
+    padding: 10px;
+    width: 180px;
+    height: 75px;
+}
